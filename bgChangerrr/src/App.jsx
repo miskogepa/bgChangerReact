@@ -10,44 +10,51 @@ function App() {
  // Unutar zagrada možeš da pišeš svoje nazive Na primer:
  // const [mojaBoja, promeniBoju] = useState("olive");
 
- /*
- U ovom kodu:
+/*U ovom kodu:
 
 color je promenljiva koja čuva trenutno stanje (u ovom slučaju, trenutnu boju). Kada želiš da prikažeš ili koristiš trenutnu vrednost, koristiš color.
 
 setColor je funkcija kojom menjaš vrednost promenljive color. Kada želiš da promeniš boju, pozoveš setColor("novaBoja").
 
-Primer korišćenja:
+  Primer korišćenja:
 
+setColor("red"); // sada je color = "red"
+  
 Ovo je deo React-ovog sistema za upravljanje stanjem u komponentama.
- 
 
 Tu se koristi useState.
 
-useState je React hook koji omogućava komponentama da imaju svoje stanje.
+  useState je React hook koji omogućava komponentama da imaju svoje stanje.
+
 Kada napišeš const [color, setColor] = useState("olive");, koristiš useState da napraviš promenljivu (color) i funkciju za njenu promenu (setColor), a početna vrednost je "olive".
+
 Primer u funkcionalnoj komponenti:
 
 import React, { useState } from "react";
 
 function Primer() {
-  const [color, setColor] = useState("olive");
 
-  return (
-    <div>
-      <p>Trenutna boja: {color}</p>
-      <button onClick={() => setColor("blue")}>Promeni u plavu</button>
-    </div>
-  );
-}
+  const [color, setColor] = useState("olive"); 
 
-Dakle, useState omogućava da komponenta "pamti" neku vrednost i da je menja tokom vremena.
- 
- 
- 
- \*/
+  return (
 
+    <div>
 
+      <p>Trenutna boja: {color}</p>
+
+      <button onClick={() => setColor("blue")}>Promeni u plavu</button>
+
+    </div>const [color, setColor] = useState("olive");
+
+ // koristimo hook useState za upravljanje stanjem boje
+
+ // const [color, setColor] = useState("olive"); // inicijalna boja
+
+ // Unutar zagrada možeš da pišeš svoje nazive Na primer:
+
+ // const [mojaBoja, promeniBoju] = useState("olive");
+
+ */
 
 
  //  function changeColor(color) {
